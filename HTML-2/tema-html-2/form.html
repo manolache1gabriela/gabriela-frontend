@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza</title>
+    </head>
+    <body>
+        <form method="get">
+            <fieldset>
+                <legend>Pizza Order</legend>
+                <input type="text" name="name" id="name" minlength="3" maxlength="10" placeholder="Your name" required>
+                <br>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+                <br>
+                <p>Topping:
+                    <input type="radio" value="supreme" name="Topping" checked>
+                    <span>Supreme</span>
+                    <input type="radio" value="vegetarian" name="Topping">
+                    <span>Vegetarian</span>
+                    <input type="radio" value="hawaian" name="Topping">
+                    <span>Hawaian</span>
+                </p>
+                <p>
+                    <label for="sauce">Sauce:</label>
+                    <select name="sauce" id="sauce">
+                        <option value="tomato">Tomato</option>
+                        <option value="white">White sauce</option>
+                        <option value="nosauce">No sauce</option>
+                    </select>
+                </p>
+                <p>Extras:
+                    <input type="checkbox" id="extra1" name="extra1" value="cheese" checked>
+                    <label for="extra1">Cheese</label>
+                    <input type="checkbox" id="extra2" name="extra2" value="onions">
+                    <label for="extra1">Onions</label>
+                    <input type="checkbox" id="extra3" name="extra3" value="olives" checked >
+                    <label for="extra1">Olives</label>
+                </p>
+                <p>Quantity:
+                    <input type="range" id="qua" name="qua" min="1" max="7" list="marker">
+                    <datalist id="marker">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                    </datalist>
+                </p>
+                <p>Delivery date and hour:
+                    <input type="datetime-local" id="deliv" name="deliv">
+                </p>
+                <p>Phone number:
+                    <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required 
+                    maxlength="10" minlength="10" placeholder="07********">
+                </p>
+                <textarea name="specif" id="specif" cols="50" rows="5" placeholder="Delivery instructions:"></textarea>
+                <br>
+                <input type="submit" value="Send order">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </body>
+</html>
