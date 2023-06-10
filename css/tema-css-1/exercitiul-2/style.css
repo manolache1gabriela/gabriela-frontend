@@ -1,0 +1,15 @@
+fieldset{
+    background-color: salmon;
+}
+label{
+    color: skyblue;
+}
+[type="text"]{
+    border: 2px solid green;
+}
+[type="email"]{
+    background-color: blue;
+}
+[type="submit"]{
+    background-color: green;
+}
