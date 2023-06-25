@@ -7,17 +7,19 @@ body{
 }
 button{
     border: none;
+    background-color: transparent;
+    border-radius: 2px;
 }
 .all{
     margin: 20px;
     /* border: 2px solid green; */
-    border-radius: 10px;
-    width: 450px;
+    border-radius: 5px;
+    width: 400px;
     height: 700px;
     display: grid;
     grid-template-rows: 5% 5% 20% 5% 65%;
     grid-template-columns: 100%;
-    background-color: #e6e6e6;
+    background-color: #e6e7e7;
     overflow: hidden;
 }
 .bara-close{
@@ -25,40 +27,72 @@ button{
     display: grid;
     grid-template-columns: 60% repeat(3 , 13.333%);
     grid-template-rows: 100%;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    color: #b5b5b5;
 }
 .app-name{
     grid-column: 1 / 2;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
 }
 .minim{
     grid-column: 2 / 3;
+    color: #b5b5b5;
+    padding-bottom: 10px;
+    font-size: 15px;
 }
 .maxim{
     grid-column: 3 / 4;
+    color: #b5b5b5;
+    font-size: 15px;
 }
 .close{
     grid-column: 4 / 5;
+    color: #b5b5b5;
+    font-size: 20px;
 }
 .bara-nav{
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 10% 30% 15% 35% 10%;
     grid-template-rows: 100%;
+    align-items: center;
+    color: #202120;
+    padding-top: 15px;
 }
 .nav{
     grid-column: 1 / 2;
+    font-size: 20px;
+    padding-left: 5px;
 }
 .calculator-type{
     grid-column: 2 / 3;
+    font-size: 25px;
+    padding-left: 15px;
+    font-weight: 300;
+    padding-bottom: 2px;
 }
 .keep{
     grid-column: 3 / 4;
+    font-size: 17px;
+    padding-top: 5px;
 }
 .history{
     grid-column: 5 / 6;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
 }
 .calcule{
     grid-row: 3 / 4;
-    width: 100%;
+    text-align: end;
+    padding-top: 50px;
+    font-size: 60px;
+    padding-right: 15px;
+    font-weight: 500;
+    color: #0d0c0d;
 }
 .bar-memory{
     grid-row: 4 / 5;
@@ -66,14 +100,22 @@ button{
     grid-template-columns: repeat(6 , 16,666%);
     grid-template-rows: 100%;
 }
+.btn-mem{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
 #MC{
     grid-column: 1 / 2;
+    color: #b5b5b5;
 }
 #MR{
     grid-column: 2 / 3;
+    color: #b5b5b5;
 }
 #M+{
     grid-column: 3 / 4;
+    color: aqua;
 }
 #M-{
     grid-column: 4 / 5;
@@ -83,10 +125,34 @@ button{
 }
 #M-arrow{
     grid-column: 6 / 7;
+    color: #b5b5b5;
+    font-size: 19px;
+    padding-bottom: 13px;
+}
+#arrow{
+    translate: 20% -100%;
+    font-size: 10px;
 }
 .buttons{
     grid-row: 5 / 6;
     display: grid;
     grid-template-columns: repeat(4 , 25%);
     grid-template-rows: repeat(6 , 16,666%);
+    gap: 2.5px;
+    padding: 4px;
+    padding-right: 12px;
+}
+.button{
+    background-color: #f0f1f1;
+    font-size: 20px;
+    color: #373736;
+}
+.button-numbers{
+    background-color: #fbfafb;
+    font-size: 20px;
+    font-weight: 600;
+    color: #373636;
+}
+#equal{
+    background-color: #8bbae1;
 }
