@@ -12,12 +12,11 @@ button{
 }
 .all{
     margin: 20px;
-    /* border: 2px solid green; */
     border-radius: 5px;
     width: 400px;
-    height: 700px;
+    height: 702px;
     display: grid;
-    grid-template-rows: 5% 5% 20% 5% 65%;
+    grid-template-rows: 5% 5% 15% 5% 5% 5% 60%;
     grid-template-columns: 100%;
     background-color: #e6e7e7;
     overflow: hidden;
@@ -30,6 +29,7 @@ button{
     align-items: center;
     padding: 5px 5px 5px 5px;
     color: #b5b5b5;
+    align-items: center;
 }
 .app-name{
     grid-column: 1 / 2;
@@ -61,6 +61,7 @@ button{
     align-items: center;
     color: #202120;
     padding-top: 15px;
+    align-items: center;
 }
 .nav{
     grid-column: 1 / 2;
@@ -74,11 +75,6 @@ button{
     font-weight: 300;
     padding-bottom: 2px;
 }
-.keep{
-    grid-column: 3 / 4;
-    font-size: 17px;
-    padding-top: 5px;
-}
 .history{
     grid-column: 5 / 6;
     font-size: 20px;
@@ -88,14 +84,27 @@ button{
 .calcule{
     grid-row: 3 / 4;
     text-align: end;
-    padding-top: 50px;
-    font-size: 60px;
+    padding-top: 40px;
+    font-size: 45px;
     padding-right: 15px;
     font-weight: 500;
     color: #0d0c0d;
 }
-.bar-memory{
+.deg-fe{
     grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: repeat(2 , 15%) 70%;
+    grid-template-rows: 100%;
+}
+.btn-deg{
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    color: #373736;
+}
+.bar-memory{
+    grid-row: 5 / 6;
     display: grid;
     grid-template-columns: repeat(6 , 16,666%);
     grid-template-rows: 100%;
@@ -113,7 +122,7 @@ button{
     grid-column: 2 / 3;
     color: #b5b5b5;
 }
-#M-plus{
+#M+{
     grid-column: 3 / 4;
 }
 #M-{
@@ -132,23 +141,55 @@ button{
     translate: 20% -100%;
     font-size: 10px;
 }
-.buttons{
-    grid-row: 5 / 6;
+.function-bar{
+    grid-row: 6 / 7;
     display: grid;
-    grid-template-columns: repeat(4 , 25%);
-    grid-template-rows: repeat(6 , 16,666%);
-    gap: 2.5px;
-    padding: 4px;
-    padding-right: 12px;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+.btn-func{
+    font-size: 15px;
+    font-weight: 300;
+    color: #373736;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+}
+.triangle{
+    color: #373736;
+    display: inline;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.fa-angle-down{
+    color: #b5b5b5;
+    translate: 5px -2px;
+    font-size: 10px;
+}
+.function-icon{
+    display: inline;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.buttons{
+    grid-row: 7 / 8;
+    display: grid;
+    grid-template-columns: repeat(5 , 20%);
+    grid-template-rows: repeat(7 , 14.285%);
+    gap: 2px;
+    padding: 2.6px;
+    padding-right: 10px;
+    padding-bottom: 14px;
 }
 .button{
     background-color: #f0f1f1;
-    font-size: 20px;
+    font-size: 15px;
     color: #373736;
 }
 .button-numbers{
     background-color: #fbfafb;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: #373636;
 }
@@ -163,3 +204,5 @@ button:hover{
     color: #f0f1f1;
     background-color: #373736;
 }
+
+
