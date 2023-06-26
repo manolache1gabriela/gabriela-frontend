@@ -291,6 +291,39 @@ i{
 .apps div{
     background-color: #0078d7;
 }
+.mc-apps{
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    grid-template-rows: repeat(3, 33.333%);
+}
+#outlook{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#word{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#excel{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+#drive{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#ppt{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#note{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+#skype{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
 
 /* ---images--- */
 
@@ -360,10 +393,124 @@ i{
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
-
-
+#office{
+    background-image: url(./img/productivity-bar-img/732222.png);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#302d2d;
+}
+#outlook{
+    background-image: url(./img/productivity-bar-img/mail+microsoft+outlook+icon-1320086786273490891.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#1f4b6d;
+}
+#word{
+    background-image: url(./img/productivity-bar-img/download\ \(1\).png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#09548d;
+}
+#excel{
+    background-image: url(./img/productivity-bar-img/Excel-icon.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#124525;
+}
+#drive{
+    background-image: url(./img/productivity-bar-img/OneDrive-Icon-6169340811554-480x0-c-default.png);
+    background-size: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ppt{
+    background-image: url(./img/productivity-bar-img/217054.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#7e3916;
+}
+#note{
+    background-image: url(./img/productivity-bar-img/download.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#skype{
+    background-image: url(./img/productivity-bar-img/skype-icon-2048x2048-i1tcgitm.png);
+    background-size: 40px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+#mail{
+    background-image: url(./img/productivity-bar-img/icons8-mail-48.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#edge{
+    background-image: url(./img/productivity-bar-img/icons8-edge-100.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#photos{
+    background-image: url(./img/productivity-bar-img/icons8-photos-96.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#to-do{
+    background-image: url(./img/productivity-bar-img/icons8-microsoft-to-do-app-100.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#store{
+    background-image: url(./img/productivity-bar-img/icons8-microsoft-store-96.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#weather{
+    background-image: url(./img/productivity-bar-img/unnamed.png);
+    background-size: cover;
+    opacity: 0.7;
+}
+#news{
+    background-image: url(./img/productivity-bar-img/5dfe1dc1232b2.png);
+    background-size: cover;
+}
+#solitaire{
+    background-image: url(./img/productivity-bar-img/icons8-microsoft-solitaire-collection-96.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#netflix{
+    background-image: url(./img/productivity-bar-img/Netflix-new-icon.png);
+    background-size: cover;
+}
+#games{
+    background-image: url(./img/productivity-bar-img/windows-game-icon-18.jpg);
+    background-size: 250px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#audio{
+    background-image: url(./img/productivity-bar-img/icon-eqsyb.jpg);
+    background-size: cover;
+}
+#launch{
+    background-image: url(./img/productivity-bar-img/icons8-gears-96.png);
+    background-size: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -376,5 +523,5 @@ i{
     box-shadow: inset 0 0 0 1000px rgba(136, 136, 136, 0.87);
 }
 .productivity > div > div:hover{
-    box-shadow: inset 0 0 0 1000px rgba(136, 136, 136, 0.3);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
