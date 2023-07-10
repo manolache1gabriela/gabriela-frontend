@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <title>Calculator Standard</title>
+    </head>
+    <body>
+        <div class="all">
+            <div class="bara-close">
+                <div class="app-name">Calculator</div>
+                <button class="minim">
+                    <i class="fa-regular fa-window-minimize"></i>
+                </button>
+                <button class="maxim">
+                    <i class="fa-regular fa-square"></i>
+                </button>
+                <button class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="bara-nav">
+                <button class="nav">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="calculator-type">Standard</div>
+                <button class="keep">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <button class="history">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </button>
+            </div>
+            <div class="calcule">0</div>
+            <div class="bar-memory">
+                <button class="btn-mem" id="MC">MC</button>
+                <button class="btn-mem" id="MR">MR</button>
+                <button class="btn-mem" id="M-plus">M+</button>
+                <button class="btn-mem" id="M-">M-</button>
+                <button class="btn-mem" id="MS">MS</button>
+                <button class="btn-mem" id="M-arrow">M<i class="fa-solid fa-sort-down arrow-down" id="arrow"></i></button>
+            </div>
+            <div class="buttons">
+                <button class="button" id="percentage">%</button>
+                <button class="button" id="CE">CE</button>
+                <button class="button" id="C">C</button>
+                <button class="button" id="erase"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="button" id="fraction"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>1</mn><mi>x</mi></mfrac></math></button>
+                <button class="button" id="superscript"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup></math></button>
+                <button class="button" id="root"><math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mi>x</mi><mn>2</mn></mroot></math></button>
+                <button class="button" id="devide"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xf7;</mo></math></button>
+                <button class="button-numbers" id="7">7</button>
+                <button class="button-numbers" id="8">8</button>
+                <button class="button-numbers" id="9">9</button>
+                <button class="button" id="multiply"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xd7;</mo></math></button>
+                <button class="button-numbers" id="4">4</button>
+                <button class="button-numbers" id="5">5</button>
+                <button class="button-numbers" id="6">6</button>
+                <button class="button" id="minus"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x2212;</mo></math></button>
+                <button class="button-numbers" id="1">1</button>
+                <button class="button-numbers" id="2">2</button>
+                <button class="button-numbers" id="3">3</button>
+                <button class="button" id="plus"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>+</mo></math></button>
+                <button class="button-numbers" id="negate"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mo>+</mo><mo>-</mo></mfrac></math></button>
+                <button class="button-numbers" id="0">0</button>
+                <button class="button-numbers" id="point">.</button>
+                <button class="button" id="equal">=</button>
+            </div>
+        </div>
+    </body>
+</html>

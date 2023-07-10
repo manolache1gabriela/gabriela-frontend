@@ -1,0 +1,527 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 16px;
+    color: #b4b4b4;
+}
+i{
+    color: #b4b4b4;
+}
+.all{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 8% 42% 50%;
+    grid-template-rows: 100%;
+    width: 700px;
+    height: 650px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-image: url(./img/images.jpg);
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.85);
+}
+
+/* ---menu bar--- */
+
+.menu{
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% auto repeat(5, 8%);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.bars{
+    grid-row: 1 / 2;
+}
+.user{
+    grid-row: 3 / 4;
+}
+.file{
+    grid-row: 4 / 5;
+}
+.photo{
+    grid-row: 5 / 6;
+}
+.settings{
+    grid-row: 6 / 7;
+}
+.off-btn{
+    grid-row: 7 / 8;
+}
+
+/* ---apps bar--- */
+
+.recent{
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 20% 10% 20% auto;
+    overflow-y: auto;
+    padding: 25px 5px 25px 5px;
+    gap: 20px;
+}
+.icon{
+    width: 30px;
+    height: 30px; 
+    background-color: #0078d7;
+}
+.icon p{
+    margin-left: 5px;
+}
+.recently{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% repeat(3, 26.666%);
+    align-items: center;
+}
+.recent > div > p{
+    align-self: self-start;
+    font-size: 18px;
+}
+.install{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 10px;
+}
+.node{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.command{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.number{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 35% 35%;
+    align-items: center;
+}
+.viewer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.zip{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.zip > i{
+    translate: 160px;
+    font-size: 10px;
+}
+.number > p{
+    translate: 0px 10px;
+}
+.letter-a{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    align-items: center;
+}
+.alarm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.letter-b{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 35% 35%;
+    align-items: center;
+}
+.letter-b > p{
+    translate: 0px 15px;
+}
+.battle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.battle > i{
+    translate: 135px;
+    font-size: 10px;
+}
+.brave{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.letter-c{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% repeat(4, 21.25%);
+    align-items: center;
+    gap: 10px;
+}
+.letter-c > p{
+    translate: 0px 5px;
+}
+.calculator{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.calendar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.camera{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.connect{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.letter-d{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    align-items: center;
+    gap: 10px;
+}
+.letter-d > p{
+    translate: 0px 20px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.disney{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.letter-e{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    align-items: center;
+    gap: 10px;
+}
+.letter-e > p{
+    translate: 0px 10px;
+}
+.excel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ---scrollbar--- */
+
+.recent::-webkit-scrollbar{
+    width: 5px;
+}
+.recent::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.recent::-webkit-scrollbar-thumb {
+    background-color: rgb(81, 81, 81, 0.25);
+  }
+
+/* ---productivity bar--- */
+
+.productivity{
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 35% 5% 35% 3% 17%;
+    padding: 25px 5px 5px 5px;
+}
+.productivity > p{
+    align-self: self-start;
+    font-size: 18px;
+}
+.prod{
+    grid-row: 1 / 2;
+}
+.microsoft{
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(3, 33%);
+    gap: 5px;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+.microsoft div{
+    background-color: #0078d7;
+}
+.office{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: #fff;
+}
+.expl{
+    grid-row: 3 / 4;
+    padding-top: 10px;
+}
+.explore{
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(3, 33%);
+    margin-top: 5px;
+    padding-right: 5px;
+    gap: 5px;
+}
+.explore div{
+    background-color: #0078d7;
+}
+.apps{
+    grid-row: 6 / 7;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    padding-right: 5px;
+    gap: 5px;
+}
+.apps div{
+    background-color: #0078d7;
+}
+.mc-apps{
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    grid-template-rows: repeat(3, 33.333%);
+}
+#outlook{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#word{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#excel{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+#drive{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#ppt{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#note{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+#skype{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+/* ---images--- */
+
+.install > .icon{
+    background-image: url(./img/console-cmd-icon.png);
+    background-size: cover;
+}
+.node > .icon{
+    background-image: url(./img/5968322.png);
+    background-size: cover;
+}
+.command > .icon{
+    background-image: url(./img/console-cmd-icon.png);
+    background-size: cover;
+}
+.viewer > .icon{
+    background-image: url(./img/apps.8450.13510798887905001.5b97746c-8ffa-4764-b336-d48b70f8b290.8206da24-3497-4c77-b12e-e3f9cc3d665c);
+    background-size: cover;
+}
+.zip > .icon{
+    background-image: url(./img/folder-icon-big-256.png);
+    background-size: cover;
+}
+.alarm > .icon{
+    background-image: url(./img/apps.27960.9007199266246190.7d5781be-8887-4229-a335-e66e73b442a7.b04dfd47-3622-4520-8e4e-85bcc7c1b888);
+    background-size: 60px;
+    background-position: center;
+}
+.battle > .icon{
+    background-image: url(./img/folder-icon-big-256.png);
+    background-size: cover;
+}
+.brave > .icon{
+    background-image: url(./img/Brave_icon_lionface.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.calculator > .icon{
+    background-image: url(./img/Windows_Calculator_icon.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.calendar > .icon{
+    background-image: url(./img/Calendar-icon.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.camera > .icon{
+    background-image: url(./img/apps.55986.9007199266252789.05ba84d6-f74d-4beb-ba05-12d7e5f76cd0.5a86d68c-f2ab-4666-9df1-a7f7f3c863b4);
+    background-size: 65px;
+    background-position: center;
+}
+.connect > .icon{
+    background-image: url(./img/icons8-chromecast-cast-button-32.png);
+    background-size: cover;
+}
+.disney > .icon{
+    background-image: url(./img/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b);
+    background-size: cover;
+}
+.excel > .icon{
+    background-image: url(./img/Microsoft-Excel-Logo.png);
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#office{
+    background-image: url(./img/productivity-bar-img/732222.png);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#302d2d;
+}
+#outlook{
+    background-image: url(./img/productivity-bar-img/mail+microsoft+outlook+icon-1320086786273490891.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#1f4b6d;
+}
+#word{
+    background-image: url(./img/productivity-bar-img/download\ \(1\).png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#09548d;
+}
+#excel{
+    background-image: url(./img/productivity-bar-img/Excel-icon.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#124525;
+}
+#drive{
+    background-image: url(./img/productivity-bar-img/OneDrive-Icon-6169340811554-480x0-c-default.png);
+    background-size: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ppt{
+    background-image: url(./img/productivity-bar-img/217054.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#7e3916;
+}
+#note{
+    background-image: url(./img/productivity-bar-img/download.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#skype{
+    background-image: url(./img/productivity-bar-img/skype-icon-2048x2048-i1tcgitm.png);
+    background-size: 40px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+#mail{
+    background-image: url(./img/productivity-bar-img/icons8-mail-48.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#edge{
+    background-image: url(./img/productivity-bar-img/icons8-edge-100.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#photos{
+    background-image: url(./img/productivity-bar-img/icons8-photos-96.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#to-do{
+    background-image: url(./img/productivity-bar-img/icons8-microsoft-to-do-app-100.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#store{
+    background-image: url(./img/productivity-bar-img/icons8-microsoft-store-96.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#weather{
+    background-image: url(./img/productivity-bar-img/unnamed.png);
+    background-size: cover;
+    opacity: 0.7;
+}
+#news{
+    background-image: url(./img/productivity-bar-img/5dfe1dc1232b2.png);
+    background-size: cover;
+}
+#solitaire{
+    background-image: url(./img/productivity-bar-img/icons8-microsoft-solitaire-collection-96.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#netflix{
+    background-image: url(./img/productivity-bar-img/Netflix-new-icon.png);
+    background-size: cover;
+}
+#games{
+    background-image: url(./img/productivity-bar-img/windows-game-icon-18.jpg);
+    background-size: 250px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#audio{
+    background-image: url(./img/productivity-bar-img/icon-eqsyb.jpg);
+    background-size: cover;
+}
+#launch{
+    background-image: url(./img/productivity-bar-img/icons8-gears-96.png);
+    background-size: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ---button-hover--- */
+
+.menu > div:hover{
+    box-shadow: inset 0 0 0 1000px rgba(136, 136, 136, 0.87);
+}
+.recent > div > div:hover{
+    box-shadow: inset 0 0 0 1000px rgba(136, 136, 136, 0.87);
+}
+.productivity > div > div:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
