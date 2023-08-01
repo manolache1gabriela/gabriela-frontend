@@ -11,10 +11,6 @@ const secondSentence = `Andrei are un salariu de 1000 euro/luna, un bonus de 900
 
 function computeIncome(sentence) {
     const splitSentence = sentence.split(/\s/g);
-    // const regex = /[0-9]/g;
-    // numbers = splitSentence.match(regex);
-    // return numbers;
-
     const nume = splitSentence[0];
     const regex = /([0-9]+ [a-z]{3,}(\/[a-z]{2,4}){0,1})/g;
     const matchValues = sentence.match(regex);
@@ -33,7 +29,6 @@ function computeIncome(sentence) {
         }
         return number;
     });
-    console.log(values)
     const sumOfMoney = values.reduce(
         (accumulator, money) => {
             return accumulator + money;
