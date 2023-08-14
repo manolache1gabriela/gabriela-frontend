@@ -5,7 +5,6 @@ let impozit = 0;
 
 if (capacitateCilindrica <= 1600 && (tipVehicul === tipuriVehicul[0] || tipVehicul === tipuriVehicul[1])) {
     impozit = Math.floor((capacitateCilindrica / 200) * 8);
-    console.log(capacitateCilindrica, tipVehicul);
 } else if (capacitateCilindrica > 1600 && tipVehicul === tipuriVehicul[1]) {
     impozit = Math.floor((capacitateCilindrica / 200) * 9);
 } else if (capacitateCilindrica > 1600 && capacitateCilindrica <= 2000 && tipVehicul === tipuriVehicul[0]) {
