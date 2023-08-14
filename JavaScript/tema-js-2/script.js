@@ -43,6 +43,3 @@ sum(initialValues);
 concat(initialValues);
 invert(initialValues);
 console.log(initialValues);
-
-1234
-2345
